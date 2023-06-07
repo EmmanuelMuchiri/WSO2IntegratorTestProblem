@@ -1,0 +1,26 @@
+<data transports="http https local" serviceGroup="" serviceNamespace="" name="UsersDS">
+  <config id="CSV">
+    <property name="csv_datasource">C:/Users/Bring/Desktop/Interviews/records.csv</property>
+    <property name="csv_hasheader">true</property>
+    <property name="csv_columnseperator">,</property>
+    <property name="csv_startingrow">2</property>
+    <property name="csv_maxrowcount">100</property>
+    <property name="csv_headerrow">1</property>
+  </config>
+  <query id="Query1" useConfig="CSV">
+    <sql />
+    <result element="Users" rowName="name">
+      <element name="name" xsdType="string" requiredRoles="" />
+      <element name="mobile" xsdType="string" requiredRoles="" />
+      <element name="country" xsdType="string" requiredRoles="" />
+      <element name="mobileLength" xsdType="integer" requiredRoles="" />
+    </result>
+  </query>
+  <operation name="Operation1">
+    <call-query href="Query1" />
+  </operation>
+  <resource method="GET" path="Users">
+    <description />
+    <call-query href="Query1" />
+  </resource>
+</data>
