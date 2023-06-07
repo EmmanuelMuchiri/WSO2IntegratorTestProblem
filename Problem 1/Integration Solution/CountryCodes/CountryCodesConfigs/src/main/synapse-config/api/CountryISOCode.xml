@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/countrys" name="CountryISOCode" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/{isoCode}">
+        <inSequence>
+            <sequence key="CountriesByISO"/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

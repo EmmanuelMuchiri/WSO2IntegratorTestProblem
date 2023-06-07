@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="Coutries" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property name="transactionStatusUrl" scope="default" type="STRING" value="http://localhost:9080/api/countries/"/>
+    <property expression="get-property('transactionStatusUrl')" name="uri.var.httpendpointurl" scope="default" type="STRING"/>
+    <log>
+        <property expression="get-property('transactionStatusUrl')" name="transactionStatusUrl---------------------------------------"/>
+        <property expression="get-property('uri.var.httpendpointurl')" name="uri.var.httpendpointurl---------------------------------------"/>
+    </log>
+    <log level="full"/>
+    <property action="remove" name="REST_URL_POSTFIX" scope="axis2"/>
+    <property name="messageType" scope="axis2" type="STRING" value="application/xml"/>
+    <call description="Countries Service Request">
+        <endpoint>
+            <http method="get" uri-template="{uri.var.httpendpointurl}">
+                <suspendOnFailure>
+                    <initialDuration>-1</initialDuration>
+                    <progressionFactor>1</progressionFactor>
+                </suspendOnFailure>
+                <markForSuspension>
+                    <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                </markForSuspension>
+            </http>
+        </endpoint>
+    </call>
+    <property name="DISABLE_CHUNKING" scope="axis2" type="STRING" value="true"/>
+    <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+    <log level="full"/>
+    <respond/>
+</sequence>

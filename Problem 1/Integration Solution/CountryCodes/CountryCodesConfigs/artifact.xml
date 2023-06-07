@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="CountryCodes" groupId="com.country.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/CountryCodes.xml</file>
+    </artifact>
+    <artifact name="CountryCodes_swagger" groupId="com.country.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/CountryCodes_swagger.yaml</file>
+    </artifact>
+    <artifact name="CountryCodes_metadata" groupId="com.country.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/CountryCodes_metadata.yaml</file>
+    </artifact>
+    <artifact name="Coutries" groupId="com.country.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/Coutries.xml</file>
+    </artifact>
+    <artifact name="CountryISOCode" groupId="com.country.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/CountryISOCode.xml</file>
+    </artifact>
+    <artifact name="CountryISOCode_swagger" groupId="com.country.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/CountryISOCode_swagger.yaml</file>
+    </artifact>
+    <artifact name="CountryISOCode_metadata" groupId="com.country.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/CountryISOCode_metadata.yaml</file>
+    </artifact>
+    <artifact name="CountriesByISO" groupId="com.country.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/CountriesByISO.xml</file>
+    </artifact>
+</artifacts>
