@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "914f0f5c-16e0-45c4-9c2c-666bea02d510",
+		"name": "WSO2 Integrator Role Interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5433992",
+		"_collection_link": "https://speeding-resonance-926536.postman.co/workspace/IBM-API'S-MVP-1~8f37ecac-93db-415b-b5d9-a561b10f018d/collection/5433992-914f0f5c-16e0-45c4-9c2c-666bea02d510?action=share&creator=5433992&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Problem 1",
+			"item": [
+				{
+					"name": "WSO2 Integrator Get All Countries",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/xml"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							},
+							{
+								"key": "Internal-Key",
+								"value": "eyJraWQiOiJnYXRld2F5X2NlcnRpZmljYXRlX2FsaWFzIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJhZG1pbkBjYXJib24uc3VwZXIiLCJpc3MiOiJodHRwczpcL1wvbG9jYWxob3N0Ojk0NDNcL29hdXRoMlwvdG9rZW4iLCJrZXl0eXBlIjoiUFJPRFVDVElPTiIsInN1YnNjcmliZWRBUElzIjpbeyJzdWJzY3JpYmVyVGVuYW50RG9tYWluIjpudWxsLCJuYW1lIjoiQlBSX1QyNEJhbGFuY2VJbnF1aXJ5IiwiY29udGV4dCI6IlwvYnByX3QyNGJhbGFuY2VpbnF1aXJ5XC8xLjAuMCIsInB1Ymxpc2hlciI6InN1cGVyYWRtaW4iLCJ2ZXJzaW9uIjoiMS4wLjAiLCJzdWJzY3JpcHRpb25UaWVyIjpudWxsfV0sImV4cCI6MTY2NDg2MjA1NywidG9rZW5fdHlwZSI6IkludGVybmFsS2V5IiwiaWF0IjoxNjY0ODAyMDU3LCJqdGkiOiI1MWVlOWNlNS03ZmU5LTQ5MDctYTQ2Ny1iODE3NmVmYmUwNTUifQ.F_L3fkmq5IDbZbY3NEb3AnU-VpCy5Gy60uCem0iQwlv6Hqr-cPqAiPFteFvBhl4nzWSx_M8NE-rakxPVxWeSOKe1j2ZrquVUPQ09HaVDmYSzYFdQ7feBfBN_Mrln5YLwxJw1moApAxj6Rn_G8IRn046fFH4YQz07aQD-iD0Q9RV8MC2Ef27IM9fvwlf5dxlPAuaxa-BjfXoyx-8GXy21COA4Bwm-QzFDqCFSdp9jOVn_nC8zPxveHp3wF6JCqHES9pZul1rKzZr46tiCnLLlZUdpk1yUG_0wZ8yFmPRdZgqL43UI1Et2yUc9rRevdPpOxobFJ7PF5gJl5i5nlsv_7g",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8290/countries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8290",
+							"path": [
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WSO2 Integrator Get Country By ISO Code",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/xml"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							},
+							{
+								"key": "Internal-Key",
+								"value": "eyJraWQiOiJnYXRld2F5X2NlcnRpZmljYXRlX2FsaWFzIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJhZG1pbkBjYXJib24uc3VwZXIiLCJpc3MiOiJodHRwczpcL1wvbG9jYWxob3N0Ojk0NDNcL29hdXRoMlwvdG9rZW4iLCJrZXl0eXBlIjoiUFJPRFVDVElPTiIsInN1YnNjcmliZWRBUElzIjpbeyJzdWJzY3JpYmVyVGVuYW50RG9tYWluIjpudWxsLCJuYW1lIjoiQlBSX1QyNEJhbGFuY2VJbnF1aXJ5IiwiY29udGV4dCI6IlwvYnByX3QyNGJhbGFuY2VpbnF1aXJ5XC8xLjAuMCIsInB1Ymxpc2hlciI6InN1cGVyYWRtaW4iLCJ2ZXJzaW9uIjoiMS4wLjAiLCJzdWJzY3JpcHRpb25UaWVyIjpudWxsfV0sImV4cCI6MTY2NDg2MjA1NywidG9rZW5fdHlwZSI6IkludGVybmFsS2V5IiwiaWF0IjoxNjY0ODAyMDU3LCJqdGkiOiI1MWVlOWNlNS03ZmU5LTQ5MDctYTQ2Ny1iODE3NmVmYmUwNTUifQ.F_L3fkmq5IDbZbY3NEb3AnU-VpCy5Gy60uCem0iQwlv6Hqr-cPqAiPFteFvBhl4nzWSx_M8NE-rakxPVxWeSOKe1j2ZrquVUPQ09HaVDmYSzYFdQ7feBfBN_Mrln5YLwxJw1moApAxj6Rn_G8IRn046fFH4YQz07aQD-iD0Q9RV8MC2Ef27IM9fvwlf5dxlPAuaxa-BjfXoyx-8GXy21COA4Bwm-QzFDqCFSdp9jOVn_nC8zPxveHp3wF6JCqHES9pZul1rKzZr46tiCnLLlZUdpk1yUG_0wZ8yFmPRdZgqL43UI1Et2yUc9rRevdPpOxobFJ7PF5gJl5i5nlsv_7g",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8290/countrys/800",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8290",
+							"path": [
+								"countrys",
+								"800"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WSO2 Inegrator Error Handling",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/xml"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							},
+							{
+								"key": "Internal-Key",
+								"value": "eyJraWQiOiJnYXRld2F5X2NlcnRpZmljYXRlX2FsaWFzIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJhZG1pbkBjYXJib24uc3VwZXIiLCJpc3MiOiJodHRwczpcL1wvbG9jYWxob3N0Ojk0NDNcL29hdXRoMlwvdG9rZW4iLCJrZXl0eXBlIjoiUFJPRFVDVElPTiIsInN1YnNjcmliZWRBUElzIjpbeyJzdWJzY3JpYmVyVGVuYW50RG9tYWluIjpudWxsLCJuYW1lIjoiQlBSX1QyNEJhbGFuY2VJbnF1aXJ5IiwiY29udGV4dCI6IlwvYnByX3QyNGJhbGFuY2VpbnF1aXJ5XC8xLjAuMCIsInB1Ymxpc2hlciI6InN1cGVyYWRtaW4iLCJ2ZXJzaW9uIjoiMS4wLjAiLCJzdWJzY3JpcHRpb25UaWVyIjpudWxsfV0sImV4cCI6MTY2NDg2MjA1NywidG9rZW5fdHlwZSI6IkludGVybmFsS2V5IiwiaWF0IjoxNjY0ODAyMDU3LCJqdGkiOiI1MWVlOWNlNS03ZmU5LTQ5MDctYTQ2Ny1iODE3NmVmYmUwNTUifQ.F_L3fkmq5IDbZbY3NEb3AnU-VpCy5Gy60uCem0iQwlv6Hqr-cPqAiPFteFvBhl4nzWSx_M8NE-rakxPVxWeSOKe1j2ZrquVUPQ09HaVDmYSzYFdQ7feBfBN_Mrln5YLwxJw1moApAxj6Rn_G8IRn046fFH4YQz07aQD-iD0Q9RV8MC2Ef27IM9fvwlf5dxlPAuaxa-BjfXoyx-8GXy21COA4Bwm-QzFDqCFSdp9jOVn_nC8zPxveHp3wF6JCqHES9pZul1rKzZr46tiCnLLlZUdpk1yUG_0wZ8yFmPRdZgqL43UI1Et2yUc9rRevdPpOxobFJ7PF5gJl5i5nlsv_7g",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8290/countrys/80",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8290",
+							"path": [
+								"countrys",
+								"80"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mock Country By ISO Code",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Internal-Key",
+								"value": "eyJraWQiOiJnYXRld2F5X2NlcnRpZmljYXRlX2FsaWFzIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJhZG1pbkBjYXJib24uc3VwZXIiLCJpc3MiOiJodHRwczpcL1wvbG9jYWxob3N0Ojk0NDNcL29hdXRoMlwvdG9rZW4iLCJrZXl0eXBlIjoiUFJPRFVDVElPTiIsInN1YnNjcmliZWRBUElzIjpbeyJzdWJzY3JpYmVyVGVuYW50RG9tYWluIjpudWxsLCJuYW1lIjoiQlBSX1QyNEJhbGFuY2VJbnF1aXJ5IiwiY29udGV4dCI6IlwvYnByX3QyNGJhbGFuY2VpbnF1aXJ5XC8xLjAuMCIsInB1Ymxpc2hlciI6InN1cGVyYWRtaW4iLCJ2ZXJzaW9uIjoiMS4wLjAiLCJzdWJzY3JpcHRpb25UaWVyIjpudWxsfV0sImV4cCI6MTY2NDg2MjA1NywidG9rZW5fdHlwZSI6IkludGVybmFsS2V5IiwiaWF0IjoxNjY0ODAyMDU3LCJqdGkiOiI1MWVlOWNlNS03ZmU5LTQ5MDctYTQ2Ny1iODE3NmVmYmUwNTUifQ.F_L3fkmq5IDbZbY3NEb3AnU-VpCy5Gy60uCem0iQwlv6Hqr-cPqAiPFteFvBhl4nzWSx_M8NE-rakxPVxWeSOKe1j2ZrquVUPQ09HaVDmYSzYFdQ7feBfBN_Mrln5YLwxJw1moApAxj6Rn_G8IRn046fFH4YQz07aQD-iD0Q9RV8MC2Ef27IM9fvwlf5dxlPAuaxa-BjfXoyx-8GXy21COA4Bwm-QzFDqCFSdp9jOVn_nC8zPxveHp3wF6JCqHES9pZul1rKzZr46tiCnLLlZUdpk1yUG_0wZ8yFmPRdZgqL43UI1Et2yUc9rRevdPpOxobFJ7PF5gJl5i5nlsv_7g"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9080/api/countries/800",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"api",
+								"countries",
+								"800"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mock All Countries",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Internal-Key",
+								"value": "eyJraWQiOiJnYXRld2F5X2NlcnRpZmljYXRlX2FsaWFzIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJhZG1pbkBjYXJib24uc3VwZXIiLCJpc3MiOiJodHRwczpcL1wvbG9jYWxob3N0Ojk0NDNcL29hdXRoMlwvdG9rZW4iLCJrZXl0eXBlIjoiUFJPRFVDVElPTiIsInN1YnNjcmliZWRBUElzIjpbeyJzdWJzY3JpYmVyVGVuYW50RG9tYWluIjpudWxsLCJuYW1lIjoiQlBSX1QyNEJhbGFuY2VJbnF1aXJ5IiwiY29udGV4dCI6IlwvYnByX3QyNGJhbGFuY2VpbnF1aXJ5XC8xLjAuMCIsInB1Ymxpc2hlciI6InN1cGVyYWRtaW4iLCJ2ZXJzaW9uIjoiMS4wLjAiLCJzdWJzY3JpcHRpb25UaWVyIjpudWxsfV0sImV4cCI6MTY2NDg2MjA1NywidG9rZW5fdHlwZSI6IkludGVybmFsS2V5IiwiaWF0IjoxNjY0ODAyMDU3LCJqdGkiOiI1MWVlOWNlNS03ZmU5LTQ5MDctYTQ2Ny1iODE3NmVmYmUwNTUifQ.F_L3fkmq5IDbZbY3NEb3AnU-VpCy5Gy60uCem0iQwlv6Hqr-cPqAiPFteFvBhl4nzWSx_M8NE-rakxPVxWeSOKe1j2ZrquVUPQ09HaVDmYSzYFdQ7feBfBN_Mrln5YLwxJw1moApAxj6Rn_G8IRn046fFH4YQz07aQD-iD0Q9RV8MC2Ef27IM9fvwlf5dxlPAuaxa-BjfXoyx-8GXy21COA4Bwm-QzFDqCFSdp9jOVn_nC8zPxveHp3wF6JCqHES9pZul1rKzZr46tiCnLLlZUdpk1yUG_0wZ8yFmPRdZgqL43UI1Et2yUc9rRevdPpOxobFJ7PF5gJl5i5nlsv_7g"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<soap:Body\n\txmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\">\n    <UFXMsg direction=\"Rq\" msg_type=\"Information\" scheme=\"WAY4Appl\" version=\"2.0\"\n\t\txmlns:com=\"http://xmlns.equitybank.co.ke/ESB/EO/Common/V1\"\n\t\txmlns:custeo=\"http://xmlns.equitybank.co.ke/ESB/EO/Parties/Customer/V1\"\n\t\txmlns:fileo=\"http://xmlns.equitybank.co.ke/ESB/EO/Misc/File/V1\"\n\t\txmlns:ns5=\"http://xmlns.equitybank.co.ke/ESB/EO/Resilience/Biometric/V1\"\n\t\txmlns:ns6=\"http://xmlns.equitybank.co.ke/ESB/EO/Accounts/Account/V1\"\n\t\txmlns:ns7=\"http://xmlns.equitybank.co.ke/ESB/EO/Instruments/SimCard/V1\"\n\t\txmlns:ns8=\"http://xmlns.equitybank.co.ke/ESB/EO/Resilience/NationalIdentity/V1\"\n\t\txmlns:ns2=\"http://xmlns.equitybank.co.ke/ESB/EO/Instruments/Cheque/V1\"\n\t\txmlns:ns1=\"http://xmlns.equitybank.co.ke/ESB/EO/Resilience/Access/V1\"\n\t\txmlns:ns4=\"http://xmlns.equitybank.co.ke/ESB/EO/Misc/Notification/V1\"\n\t\txmlns:ns3=\"http://xmlns.equitybank.co.ke/ESB/EO/Parties/Employee/V1\">\n        <MsgId>69ec076f-f224-4938-af93-f842aa05fa49</MsgId>\n        <Source app=\"Web01\"/>\n        <MsgData>\n            <Information>\n                <RegNumber>client_case_001</RegNumber>\n                <Institution>0068</Institution>\n                <ObjectType>Contract</ObjectType>\n                <ActionType>Inquiry</ActionType>\n                <ResultDtls>\n                    <Parm>\n                        <ParmCode>Client</ParmCode>\n                        <Value>Y</Value>\n                    </Parm>\n                    <Parm>\n                        <ParmCode>Product</ParmCode>\n                        <Value>Y</Value>\n                    </Parm>\n                    <Parm>\n                        <ParmCode>Status</ParmCode>\n                        <Value>Y</Value>\n                    </Parm>\n                    <Parm>\n                        <ParmCode>FinancialInst</ParmCode>\n                        <Value>Y</Value>\n                    </Parm>\n                    <Parm>\n                        <ParmCode>Billing</ParmCode>\n                        <Value>Y</Value>\n                    </Parm>\n                    <Parm>\n                        <ParmCode>BillingStartPeriod</ParmCode>\n                        <Value>1</Value>\n                    </Parm>\n                    <Parm>\n                        <ParmCode>BillingPeriods</ParmCode>\n                        <Value>3</Value>\n                    </Parm>\n                    <Parm>\n                        <ParmCode>Parent</ParmCode>\n                        <Value>IDT</Value>\n                    </Parm>\n                    <Parm>\n                        <ParmCode>Balance</ParmCode>\n                        <Value>\n\tBLOCKED,AVAILABLE,OWN_BALANCE,TOTAL_BALANCE,CR_LIMIT,CURRENT_DUE,PAST_DUE,TOTAL_DUE\n\t</Value>\n                    </Parm>\n                </ResultDtls>\n                <ObjectFor>\n                    <ContractIDT>\n                        <ContractNumber>068-P-96269077</ContractNumber>\n                    </ContractIDT>\n                </ObjectFor>\n            </Information>\n        </MsgData>\n    </UFXMsg>\n</soap:Body>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9080/api/countries/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"api",
+								"countries",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
